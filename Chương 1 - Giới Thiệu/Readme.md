@@ -48,7 +48,7 @@ Ví dụ:
 
 <img src="https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/Reinforcement%20_Learning2.png" width="600">
 
-- The above image shows the robot, diamond, and fire. The goal of the robot is to get the reward that is the diamond and avoid the hurdles that are fired. The robot learns by trying all the possible paths and then choosing the path which gives him the reward with the least hurdles. Each right step will give the robot a reward and each wrong step will subtract the reward of the robot. The total reward will be calculated when it reaches the final reward that is the diamond. 
+- Hình ảnh trên cho thấy robot, kim cương và lửa. Mục tiêu của robot là nhận được phần thưởng là viên kim cương và tránh các chướng ngại vật được bắn ra. Robot học bằng cách thử tất cả các con đường có thể và sau đó chọn con đường mang lại cho anh ta phần thưởng với ít trở ngại nhất. Mỗi bước đúng sẽ mang lại cho robot một phần thưởng và mỗi bước sai sẽ trừ phần thưởng của robot. Tổng phần thưởng sẽ được tính khi đạt đến phần thưởng cuối cùng là kim cương.
 
 ### 2.2 Ứng Dụng Vào DeepRacer
 + Trong reinforcement learning, các mô hình AWSDeepRacer dựa theo mục tiêu được định sẵn mà sẽ tác động với môi trường đường đua để tối đa hóa phần thưởng mà mình sẽ đạt
@@ -56,6 +56,7 @@ Ví dụ:
 
 [![Watch the video](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/DeepRacer.mp4)
 <a href="{https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/DeepRacer.mp4}" title="Link Title"></a>
+
 AWSDeepRacer đưa ra rất nhiều lợi ích khi huấn luyện mô hình với một môi trường mô phỏng sử dụng RL:
 + Mô phỏng có thể ước tính mức độ tiến bộ mà mô hình đã đạt được và xác định thời điểm nó đi chệch hướng để tính toán phần thưởng.
 + Mô phỏng giải phóng người huấn luyện khỏi những công việc tẻ nhạt để thiết lập lại chiếc xe mỗi khi nó đi ra khỏi đường đua, như được thực hiện trong môi trường vật lý.
