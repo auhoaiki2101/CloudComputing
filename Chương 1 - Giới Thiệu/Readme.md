@@ -11,7 +11,9 @@ AWS Sử dụng những services sau để hoạt động và cung cấp chức 
 + AWS CloudFormation: Tạo chế độ cho những models chạy.
 + SageMaker: huấn luyện những models.
 + AWS RoboMaker: Tạo ra môi trường để huấn luyện và thử nghiệm.
+
 ![alt text](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/AWSServices.jpg)
+
 Với những services ở trên, AWSDeepRacer giúp người dùng không cần phải bận tâm quá nhiều về việc lưu trữ, hay sử dụng những docker để tạo ra môi trường giả lập:
 + Dựa trên các container Robomaker và Sagemaker, hỗ trợ trên rất nhiều nền tảng thiết lập CPU và GPU.
 + Tập hợp rất nhiều kịch bản cho phép dễ dàng thiết kế model, không cần phải làm mọi thứ từ con số 0.
@@ -32,21 +34,28 @@ AWSDeepRacer còn bảo dữ liệu người dùng ngăn chặn những xe mô p
 
 ### 1.4 AWS DeepRacer Evo
 + AWS DeepRacer Evo là xe đua tự hành thế hệ mới. Chiếc xe này được trang bị đầy đủ camera stereo và cảm biến LiDAR nhằm hỗ trợ tránh chướng ngại vật và đua đối đầu trực tiếp, mang tới cho các nhà phát triển mọi thứ họ cần để đưa trải nghiệm đua lên tầm cao mới. Với các cuộc đua tránh chướng ngại vật, nhà phát triển sử dụng cảm biến để phát hiện và tránh các trước ngại vật được đặt trên đường đua. Với hình thức đối đầu trực tiếp, các nhà phát triển đua với một xe DeepRacer khác trên cùng một đường đua, cố gắng tránh xe đó mà vẫn tìm cách hoàn thành vòng đua trong thời gian ngắn nhất. Các camera nằm bên phải và bên trái ở phía trước tạo thành hệ thống camera stereo, giúp chiếc xe xác định thông tin độ sâu bằng hình ảnh. Sau đó, xe dựa vào thông tin này để cảm nhận và tránh các chướng ngại vật xuất hiện trên đường đua. Cảm biến LiDAR nằm ở phía sau, giúp phát hiện các chướng ngại vật phía sau và bên cạnh xe.
-DeepRacer Evo 7.png
+
+![alt text](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/DeepRacer%20Evo%207.png)
 
 ## 2.Học Tăng Cường Reinforment Learning (RL)
 ### 2.1 Khái Niệm
 + Reinforment Learning là một kỹ thuật Học máy dựa trên phản hồi, trong đó tác nhân học cách cư xử trong môi trường bằng cách thực hiện các hành động và xem kết quả của các hành động. Đối với mỗi hành động tốt, người đại diện nhận được phản hồi tích cực và đối với mỗi hành động xấu, người đại diện nhận được phản hồi tiêu cực hoặc hình phạt. Giúp học các hành vi rất phức tạp mà không yêu cầu bất kỳ dữ liệu đào tạo được gắn nhãn nào và có thể đưa ra quyết định ngắn hạn trong khi tối ưu hóa cho mục tiêu dài hạn. RL là một cách tiếp cận tập trung vào việc học để hoàn thành mục tiêu bằng việc tương tác trực tiếp với môi trường.
-**Úp hình**
+
+![alt text](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/reinforcement-learning.png)
+
 + RL giúp agent(ở đây là xe chúng ta muốn huấn luyện) có thể làm được task(nhiệm vụ ta giao như hoàn thành đường đua...) bằng cách đưa ra những action miễn là maxize reward (đạt được hiệu suất tối ưu).
 Ví dụ: 
-**Úp hình**
+
+![alt text](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/Reinforcement%20_Learning2.png)
+
 - The above image shows the robot, diamond, and fire. The goal of the robot is to get the reward that is the diamond and avoid the hurdles that are fired. The robot learns by trying all the possible paths and then choosing the path which gives him the reward with the least hurdles. Each right step will give the robot a reward and each wrong step will subtract the reward of the robot. The total reward will be calculated when it reaches the final reward that is the diamond. 
 
 ### 2.2 Ứng Dụng Vào DeepRacer
 + Trong reinforcement learning, các mô hình AWSDeepRacer dựa theo mục tiêu được định sẵn mà sẽ tác động với môi trường đường đua để tối đa hóa phần thưởng mà mình sẽ đạt
 + Mục tiêu của RL trong AWSDeepRacer là tìm ra mô hình tối ưu nhất sau khi huấn luyện để có thể đem ra thực nghiệm ngoài thế giới vật lý.
-DeepRacer.mp4
+
+[![Watch the video](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/DeepRacer.mp4)
+
 AWSDeepRacer đưa ra rất nhiều lợi ích khi huấn luyện mô hình với một môi trường mô phỏng sử dụng RL:
 + Mô phỏng có thể ước tính mức độ tiến bộ mà mô hình đã đạt được và xác định thời điểm nó đi chệch hướng để tính toán phần thưởng.
 + Mô phỏng giải phóng người huấn luyện khỏi những công việc tẻ nhạt để thiết lập lại chiếc xe mỗi khi nó đi ra khỏi đường đua, như được thực hiện trong môi trường vật lý.
