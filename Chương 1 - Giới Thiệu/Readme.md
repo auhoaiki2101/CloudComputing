@@ -11,7 +11,7 @@ AWS Sử dụng những services sau để hoạt động và cung cấp chức 
 + AWS CloudFormation: Tạo chế độ cho những models chạy.
 + SageMaker: huấn luyện những models.
 + AWS RoboMaker: Tạo ra môi trường để huấn luyện và thử nghiệm.
-https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/AWSServices.jpg
+![alt text](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/AWSServices.jpg)
 Với những services ở trên, AWSDeepRacer giúp người dùng không cần phải bận tâm quá nhiều về việc lưu trữ, hay sử dụng những docker để tạo ra môi trường giả lập:
 + Dựa trên các container Robomaker và Sagemaker, hỗ trợ trên rất nhiều nền tảng thiết lập CPU và GPU.
 + Tập hợp rất nhiều kịch bản cho phép dễ dàng thiết kế model, không cần phải làm mọi thứ từ con số 0.
