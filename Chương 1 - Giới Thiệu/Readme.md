@@ -35,7 +35,7 @@ AWSDeepRacer còn bảo dữ liệu người dùng ngăn chặn những xe mô p
 ### 1.4 AWS DeepRacer Evo
 + AWS DeepRacer Evo là xe đua tự hành thế hệ mới. Chiếc xe này được trang bị đầy đủ camera stereo và cảm biến LiDAR nhằm hỗ trợ tránh chướng ngại vật và đua đối đầu trực tiếp, mang tới cho các nhà phát triển mọi thứ họ cần để đưa trải nghiệm đua lên tầm cao mới. Với các cuộc đua tránh chướng ngại vật, nhà phát triển sử dụng cảm biến để phát hiện và tránh các trước ngại vật được đặt trên đường đua. Với hình thức đối đầu trực tiếp, các nhà phát triển đua với một xe DeepRacer khác trên cùng một đường đua, cố gắng tránh xe đó mà vẫn tìm cách hoàn thành vòng đua trong thời gian ngắn nhất. Các camera nằm bên phải và bên trái ở phía trước tạo thành hệ thống camera stereo, giúp chiếc xe xác định thông tin độ sâu bằng hình ảnh. Sau đó, xe dựa vào thông tin này để cảm nhận và tránh các chướng ngại vật xuất hiện trên đường đua. Cảm biến LiDAR nằm ở phía sau, giúp phát hiện các chướng ngại vật phía sau và bên cạnh xe.
 
-![alt text](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/DeepRacer%20Evo%207.png | width=600)
+![](https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/DeepRacer%20Evo%207.png | width=600)
 
 ## 2.Học Tăng Cường Reinforment Learning (RL)
 ### 2.1 Khái Niệm
