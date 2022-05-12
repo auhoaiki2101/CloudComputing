@@ -41,7 +41,7 @@ AWSDeepRacer còn bảo dữ liệu người dùng ngăn chặn những xe mô p
 ### 2.1 Khái Niệm
 + Reinforment Learning là một kỹ thuật Học máy dựa trên phản hồi, trong đó tác nhân học cách cư xử trong môi trường bằng cách thực hiện các hành động và xem kết quả của các hành động. Đối với mỗi hành động tốt, người đại diện nhận được phản hồi tích cực và đối với mỗi hành động xấu, người đại diện nhận được phản hồi tiêu cực hoặc hình phạt. Giúp học các hành vi rất phức tạp mà không yêu cầu bất kỳ dữ liệu đào tạo được gắn nhãn nào và có thể đưa ra quyết định ngắn hạn trong khi tối ưu hóa cho mục tiêu dài hạn. RL là một cách tiếp cận tập trung vào việc học để hoàn thành mục tiêu bằng việc tương tác trực tiếp với môi trường.
 
-<img src="https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/reinforcement-learning.png" width="600">
+<img src="https://github.com/auhoaiki2101/CloudComputing/blob/main/Ch%C6%B0%C6%A1ng%201%20-%20Gi%E1%BB%9Bi%20Thi%E1%BB%87u/Media/reinforcement-learning.png" width="400">
 
 + RL giúp agent(ở đây là xe chúng ta muốn huấn luyện) có thể làm được task(nhiệm vụ ta giao như hoàn thành đường đua...) bằng cách đưa ra những action miễn là maxize reward (đạt được hiệu suất tối ưu).
 Ví dụ: 
