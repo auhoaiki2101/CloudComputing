@@ -6,7 +6,7 @@
 ### 2.1.1 Ga-ra.
 Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riêng mình mà sau đó bạn sẽ sử dụng để đào tạo các mô hình. Theo mặc định, Ga-ra chứa The Original DeepRacer. DeepRacer ban đầu sử dụng một máy ảnh mặt trước, mạng nơ-ron phức hợp 3 lớp.
 
-![](img/Ga-ra.png)
+![](imgages/Garage.png)
 ### 2.1.2 Tùy chỉnh mô hình của mình.
 - Ngoại hình: Mặc định chỉ có 1 Vehical model, thay vào đó chúng ta có thể đổi màu cho Vehical model
 
