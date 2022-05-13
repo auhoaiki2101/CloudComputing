@@ -26,11 +26,11 @@ Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riên
 ### 2.2.1 Tên mô hình và loại đường đua.
 - Chọn tên cho mô hình, thêm mô tả (nếu có)
 
-![](img/ModelName.png)
+![](img/model_name.png)
 
 - Chọn đường đua để huấn luyện mô hình
 
-![](img/Tracks.png)
+![](img/racetrack.png)
 
 ### 2.2.2 Hình thức đua.
 - `Time trial`: chạy đua với đồng hồ trên một đường đua được đánh dấu rõ ràng mà không có chướng ngại vật cố định hoặc đối thủ cạnh tranh đang di chuyển.
