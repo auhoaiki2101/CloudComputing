@@ -103,29 +103,29 @@
 
 - Ở trang chính của AWS DeepRacer, chọn mục **Community races** ở bên trái --> Chọn nút **Create race**
 
-![14](img/14.png)
+![14](img/14.PNG)
 
 - Chọn format đua và cách thức đua  
 Có 3 cách thức đua gồm: **Đua với thời gian**, **Đua với bot** và **Vượt chướng ngại vật**:
 
-![15](img/15.png)
+![15](img/15.PNG)
 
 - Đặt tên và chọn ngày cuộc đua bắt đầu và nhấn **Next**
 
-![16](img/16.png)
+![16](img/16.PNG)
 
 - Chọn đường đua mà mình muốn tạo
 
-![17](img/17.png)
+![17](img/17.PNG)
 
 - Chỉnh sửa một vài thông số như điều kiện chiến thắng, số lap và khoảng dừng khi bị lệch khỏi đường đua sau đó nhất **Next**  
 Điều kiện chiến thắng gồm Thời gian hoàn thành 1 lap, Thời gian trung bình hoàn thành của 1 lap và Tổng thời gian hoàn thành tất cả lap
 
-![18](img/18.png)
+![18](img/18.PNG)
 
 - Bảng review lại đường đua mình đã tạo hiện ra, nhấn **Submit**
 
-![19](img/19.png)
+![19](img/19.PNG)
 
 - Một đường dẫn sẽ xuất hiện, ta có thể gửi để mời bạn bè cùng tham gia
 
