@@ -47,7 +47,7 @@ Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riên
 ![](img/speed.png)
 ### 2.2.3 Thuật toán huấn luyện và siêu tham số.
 
-![algorithms](img/algorithms.png)
+![algorithms](img/training.png)
 
 - Định nghĩa thuật toán:
 	- PPO: Thuật toán tối ưu hóa với policy gần.
