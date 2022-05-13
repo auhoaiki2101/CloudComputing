@@ -35,14 +35,14 @@ Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riên
 ### 2.2.2 Hình thức đua.
 - `Time trial`: chạy đua với đồng hồ trên một đường đua được đánh dấu rõ ràng mà không có chướng ngại vật cố định hoặc đối thủ cạnh tranh đang di chuyển.
 
-![](img/RaceType.png)
+![](img/time-trial.png)
 
 - `Object avoidance`: Xe chạy trên đường hai làn với một số chướng ngại vật cố định được đặt dọc theo đường.
 
-![](img/ObjectAvoidance.png)
+![](img/object_avoidance.png)
 - `Head-to-Head`: Xe chạy đua với các phương tiện đang di chuyển khác trên đường dành cho hai làn đường.
 
-![](img/HeadToHead.png)
+![](img/head_to_head.png)
 ### 2.2.3 Thuật toán huấn luyện và siêu tham số.
 
 ![algorithms](img/algorithms.png)
