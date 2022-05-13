@@ -17,11 +17,11 @@ Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riên
 	- Cân nhắc sử dụng cảm biến camera âm thanh nổi khi bạn muốn xây dựng mô hình tránh vật thể hoặc mô hình đua xe head-to-head. Bạn sẽ cần sử dụng chức năng phần thưởng theo cách để mô hình học được các đặc điểm chiều sâu từ hình ảnh của bạn, điều có thể làm được với máy ảnh âm thanh nổi. Lưu ý rằng trong các mô hình đua xe đối đầu, camera âm thanh nổi có thể không đủ để che các điểm mù.
 	- Cân nhắc thêm LIDAR vào mô hình của bạn nếu bạn muốn tham gia vào các cuộc đua head-to-head. Cảm biến LIDAR hướng về phía sau và quét cách xe khoảng 0,5m. Nó sẽ phát hiện những chiếc xe đang tiến đến từ phía sau hoặc trong những điểm mù khi rẽ.
 
-![](img/Camera.png)
+![](img/camera.png)
 ## 2.2 Xây dựng mô hình.
 - Đầu tiên chọn `Create model`
 
-![](img/Createmodel.png)
+![](img/create_model.png)
 
 ### 2.2.1 Tên mô hình và loại đường đua.
 - Chọn tên cho mô hình, thêm mô tả (nếu có)
