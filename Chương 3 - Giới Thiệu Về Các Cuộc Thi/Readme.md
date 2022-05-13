@@ -129,4 +129,4 @@ Có 3 cách thức đua gồm: **Đua với thời gian**, **Đua với bot** v�
 
 - Một đường dẫn sẽ xuất hiện, ta có thể gửi để mời bạn bè cùng tham gia
 
-![20](img/20.png)
+![20](img/20.PNG)
