@@ -44,6 +44,7 @@ Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riên
 - `Head-to-Head`: Xe chạy đua với các phương tiện đang di chuyển khác trên đường dành cho hai làn đường.
 
 ![](img/head_to_head.png)
+![](img/speed.png)
 ### 2.2.3 Thuật toán huấn luyện và siêu tham số.
 
 ![algorithms](img/algorithms.png)
