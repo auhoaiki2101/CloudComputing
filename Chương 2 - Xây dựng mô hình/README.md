@@ -10,7 +10,7 @@ Ga-ra cho phép bạn tạo và tùy chỉnh những chiếc xe ảo của riên
 ### 2.1.2 Tùy chỉnh mô hình của mình.
 - Ngoại hình: Mặc định chỉ có 1 Vehical model, thay vào đó chúng ta có thể đổi màu cho Vehical model
 
-![](img/Shape.png)
+![](img/color_vehicle.png)
 
 - Camera:
 	- Nếu bạn muốn đua trên một chiếc xe duy nhất trên đường đua time-trial , hãy cân nhắc sử dụng camera đơn. Để đua quanh một đường đua mà không có xe hoặc chướng ngại vật khác, bạn không cần phải có đầu vào phức tạp, hơn nữa, bạn càng đi càng phức tạp thì quá trình đào tạo sẽ mất nhiều thời gian hơn.
