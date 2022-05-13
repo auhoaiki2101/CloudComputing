@@ -110,12 +110,12 @@ Không gian liên tục        |  Không gian rời rạc
 ### 2.2.5 Chọn mô hình.
 - Có thể chọn mô hình tùy theo ý thích, với hình dưới bên trái là mô hình mình tự tạo, bên phải là mô hình đã được tạo sẵn.
 
-![](img/Models.png)
+![](img/Vehicle.png)
 
 ### 2.2.6 Tinh chỉnh các thuật toán thưởng và điều kiện dừng.
 * Thuật toán thưởng (Reward Function): model chúng ta có thể thay đổi Reward function để giúp model trở lên tốt hơn. Sau đó nhấn `Validate` để đánh giá thuật toán
 
-![](img/RewardF.png)
+![](img/function.png)
 
 -  Thuật toán thưởng cơ bản (Basic Reward Function): trước tiên chúng ta tạo ba dải xung quanh đường đua, sử dụng ba điểm đánh dấu, sau đó tiến hành thưởng cho chiếc xe nhiều hơn khi lái trong dải hẹp thay vì dải trung bình hoặc dải rộng. Cũng cần lưu ý sự khác biệt về kích thước của phần thưởng. Chúng tôi đưa ra phần thưởng là 1 nếu ở trong dải hẹp, 0,5 nếu ở trong dải trung bình và 0,1 nếu ở trong dải rộng. Nếu chúng tôi giảm phần thưởng cho dải hẹp hoặc tăng phần thưởng cho dải trung bình, về cơ bản chúng tôi đang khuyến khích chiếc xe sử dụng một phần lớn hơn của bề mặt đường đua. Điều này có thể hữu ích, đặc biệt là khi có các góc cua gấp.
 
@@ -288,7 +288,7 @@ def reward_function(params):
 ![](img/StopCondition.png)
 * Ta có thể tích để thử nghiệm độ hiệu quả của mô hình ta đã training được bằng cách tham gia cuộc đua reInvent2021
 
-![](img/reInvent21.png)
+![](img/leaguage.png)
 
 ## 2.3 Đánh giá hiệu suất mô hình.
 - Sau khi hoàn tất (nhấn `Done`), mô hình sẽ được khởi tạo
