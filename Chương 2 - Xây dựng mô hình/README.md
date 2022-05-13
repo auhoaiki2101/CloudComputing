@@ -286,7 +286,7 @@ def reward_function(params):
 * Điều kiện dừng huấn luyện sau 1 khoảng thời gian (tính theo phút)
 
 ![](img/StopCondition.png)
-* Ta có thể tích để thử nghiệm độ hiệu quả của mô hình ta đã training được bằng cách tham gia cuộc đua reInvent2021
+* Ta có thể tích để thử nghiệm độ hiệu quả của mô hình ta đã training được bằng cách tham gia cuộc đua May Qualiter 2022
 
 ![](img/leaguage.png)
 
