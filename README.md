@@ -3,7 +3,7 @@
 ### Thành Viên
 - Nguyễn Thanh Tân Kỷ - 19133031
 - Nguyễn Anh Đắc - 19133020
-- Lại Hữu Trác - 19133069
+- Lại Hữu Trác - 19133059
 ### Các Dịch Vụ Sử Dụng
 - Amazon Simple Storage Service: Lưu trữ model.
 - AWS Lambda: Tạo và chạy những thuật toán ‘thưởng’ .
