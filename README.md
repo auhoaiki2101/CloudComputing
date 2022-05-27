@@ -10,4 +10,5 @@
 - AWS CloudFormation: Tạo chế độ cho những models chạy.
 - SageMaker: huấn luyện những models
 - AWS RoboMaker: Tạo ra môi trường để huấn luyện và thử nghiệm.
-
+### Tài Liệu Tham Khảo
+- https://aws.amazon.com/deepracer/
