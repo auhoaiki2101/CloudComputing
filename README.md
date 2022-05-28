@@ -12,3 +12,4 @@
 - AWS RoboMaker: Tạo ra môi trường để huấn luyện và thử nghiệm.
 ### Tài Liệu Tham Khảo
 - https://aws.amazon.com/deepracer/
+- https://docs.aws.amazon.com/deepracer/latest/developerguide/what-is-deepracer.html
