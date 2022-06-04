@@ -1,59 +1,32 @@
-# Sau khi điều chỉnh tốc độ và góc lái của xe
-def reward_function(params):
-    '''
-    Example of penalize steering, which helps mitigate zig-zag behaviors
-    '''
-    
-    # Đọc thông số đầu vào
-    distance_from_center = params['distance_from_center']
-    track_width = params['track_width']
-    steering = abs(params['steering_angle']) # Chỉ cần góc lái tuyệt đối
-    speed = params['speed']
-    is_left_of_center = params['is_left_of_center']
-    all_wheels_on_track = params['all_wheels_on_track']
-    steps = params['steps']
-    progress = params['progress']
-    
-    reward = 0.0
-    
+def reward_function(params): 
 
-    if(is_left_of_center == True):
-        reward *= 5.0
-        
-    else:
-        reward -= 5.0
+track_width = params['track_width']
+distance_from_center = params['distance_from_center'] 
+all_wheels_on_track = params['all_wheels_on_track'] 
+speed = params['speed'] SPEED_THRESHOLD = 1.0 
 
-    if(distance_from_center <= track_width / 2):
-        reward += 2.0
-        
-    else:
-        reward -= 1e-3
+# Calculate 3 markers that are at varying distances away from the center line 
+marker_1 = 0.1 * track_width 
+marker_2 = 0.25 * track_width 
+marker_3 = 0.5 * track_width 
 
-    TOTAL_NUM_STEPS = 500
+# Give higher reward if the car is closer to center line and vice versa if 
+distance_from_center <= marker_1: 
+reward = 1.0 
+elif distance_from_center <= marker_2: 
+reward = 0.5 
+elif distance_from_center <= marker_3: 
+reward = 0.1 
+else: 
+reward = 1e-3  # likely crashed/ close to off track 
 
-    # Tặng thêm phần thưởng nếu xe chạy nhanh hơn dự kiến mỗi 100 bước
-    if ((steps % 100) == 0 and progress > (steps / TOTAL_NUM_STEPS) * 100) :
-        reward += 10.0
-
-    SPEED_THRESHOLD = 7.0
-
-    if not all_wheels_on_track:
-        # Phạt nếu xe đi chệch hướng
-        reward -= 1e-3
-    elif speed < SPEED_THRESHOLD:
-        # Phạt nếu ô tô đi quá chậm
-        reward += 1.55 
-    else:
-        # Thưởng cao nếu xe đi đúng hướng và đi nhanh
-        reward *= 2.0
-
-
-
-    # Ngưỡng phạt lái, thay đổi số dựa trên cài đặt không gian hành động của bạn
-    ABS_STEERING_THRESHOLD = 30
-
-    # Thưởng phạt nếu xe bẻ lái quá nhiều
-    if steering > ABS_STEERING_THRESHOLD:
-        reward *= 0.7
-
-    return float(reward)
+if not all_wheels_on_track:
+# Penalize if the car goes off track 
+reward = 1e-3 
+elif speed < SPEED_THRESHOLD: 
+# Penalize if the car goes too slow 
+reward = reward + 0.5 
+else: 
+# High reward if the car stays on track and goes fast 
+reward = reward + 1.0 
+return float(reward)
